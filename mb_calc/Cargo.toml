@@ -1,0 +1,4 @@
+[package]
+name = "mb_calc"
+version = "0.1.0"
+authors = ["Paul Martensen <stu102532@mail.uni-kiel.de>"]
