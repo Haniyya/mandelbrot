@@ -1,5 +1,8 @@
 use num::Complex;
 
+const MAX_VALUE: f64 = 1000.0;
+const MAX_ITERATIONS: i32 = 25;
+
 struct Pixel {
     point: Complex,
     iter: i32,
@@ -16,7 +19,7 @@ fn bounded(point: Complex) -> i32 {
     let mut i = 0;
     let point = point;
 
-    while c <= 1000.0 && i <= 20 {
+    while c <= MAX_VALUE && i <= MAX_ITERATIONS {
         i += 1;
         c = next_value(c, &point);
     }
